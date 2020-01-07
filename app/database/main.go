@@ -56,3 +56,13 @@ func Insert(docs ...interface{}) error {
 
 	return c.Insert(docs...)
 }
+
+// Upsert updates or inserts one or more documents.
+func Upsert(selector interface{}, update interface{}) error {
+	s, c := connect(db, collection)
+	defer s.Close()
+
+	_, err := c.Upsert(selector, update)
+
+	return err
+}

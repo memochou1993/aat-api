@@ -55,16 +55,7 @@ func Import(w http.ResponseWriter, r *http.Request) {
 	parse()
 
 	for i := 0; i < len(vocabulary.Subjects); i++ {
-		query := bson.M{"subjectId": vocabulary.Subjects[i].SubjectID}
-
-		if _, err := subject.Find(query, nil); err == nil {
-			continue
-		}
-
-		if err := subject.Store(vocabulary.Subjects[i]); err != nil {
-			response(w, http.StatusInternalServerError, err.Error())
-			return
-		}
+		subject.Upsert(bson.M{"subjectId": vocabulary.Subjects[i].SubjectID}, vocabulary.Subjects[i])
 	}
 
 	response(w, http.StatusCreated, nil)

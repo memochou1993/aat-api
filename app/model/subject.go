@@ -112,7 +112,7 @@ type Source struct {
 	SourceID string `xml:"Source_ID" bson:"sourceId" json:"sourceId"`
 }
 
-// Find will find a subject.
+// Find finds a subject.
 func (m *Subject) Find(query interface{}, selector interface{}) (Subject, error) {
 	var subject Subject
 	err := database.Find(query, selector, &subject)
@@ -120,7 +120,12 @@ func (m *Subject) Find(query interface{}, selector interface{}) (Subject, error)
 	return subject, err
 }
 
-// Store will store a subject.
+// Store stores a subject.
 func (m *Subject) Store(subject interface{}) error {
 	return database.Insert(subject)
+}
+
+// Upsert updates or inserts a subject.
+func (m *Subject) Upsert(selector interface{}, subject interface{}) error {
+	return database.Upsert(selector, subject)
 }
