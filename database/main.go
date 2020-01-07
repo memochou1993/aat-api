@@ -3,20 +3,20 @@ package database
 import (
 	"context"
 	"log"
+	"os"
 	"time"
 
+	_ "github.com/joho/godotenv/autoload" // initialize
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const (
-	uri        = "mongodb://localhost:27017"
-	database   = "thesaurus"
-	collection = "subjects"
+var (
+	uri      = os.Getenv("DB_URI")
+	database = os.Getenv("DB_DATABASE")
+	err      error
+	client   *mongo.Client
 )
-
-var err error
-var client *mongo.Client
 
 func init() {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
@@ -29,7 +29,7 @@ func init() {
 }
 
 // Upsert updates or inserts a resource.
-func Upsert(query interface{}, update interface{}) error {
+func Upsert(collection string, query interface{}, update interface{}) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 

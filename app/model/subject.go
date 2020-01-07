@@ -4,6 +4,10 @@ import (
 	"github.com/memochou1993/thesaurus/database"
 )
 
+const (
+	collection = "subjects"
+)
+
 // Vocabulary struct
 type Vocabulary struct {
 	Title    string    `xml:"Title,attr"`
@@ -114,5 +118,5 @@ type Source struct {
 
 // Upsert updates or inserts a subject.
 func (m *Subject) Upsert(query interface{}, subject interface{}) error {
-	return database.Upsert(query, subject)
+	return database.Upsert(collection, query, subject)
 }
