@@ -1,52 +1,42 @@
 package database
 
 import (
+	"context"
 	"log"
+	"time"
 
-	"github.com/globalsign/mgo"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 const (
-	host       = "localhost:27017"
-	source     = ""
-	username   = ""
-	password   = ""
-	db         = "thesaurus"
+	uri        = "mongodb://localhost:27017"
+	database   = "thesaurus"
 	collection = "subjects"
 )
 
-var session *mgo.Session
+var err error
+var client *mongo.Client
 
 func init() {
-	dialInfo := &mgo.DialInfo{
-		Addrs:    []string{host},
-		Source:   source,
-		Username: username,
-		Password: password,
-	}
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
 
-	s, err := mgo.DialWithInfo(dialInfo)
-
-	if err != nil {
+	opts := options.Client().ApplyURI(uri)
+	if client, err = mongo.Connect(ctx, opts); err != nil {
 		log.Fatalln(err.Error())
 	}
-
-	session = s
 }
 
-func connect() (*mgo.Session, *mgo.Collection) {
-	s := session.Copy()
-	c := s.DB(db).C(collection)
+// Upsert updates or inserts a resource.
+func Upsert(query interface{}, update interface{}) error {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
 
-	return s, c
-}
+	c := client.Database(database).Collection(collection)
 
-// Upsert updates or inserts one or more documents.
-func Upsert(selector interface{}, update interface{}) error {
-	s, c := connect()
-	defer s.Close()
-
-	_, err := c.Upsert(selector, update)
+	opts := options.Update().SetUpsert(true)
+	_, err := c.UpdateOne(ctx, query, update, opts)
 
 	return err
 }

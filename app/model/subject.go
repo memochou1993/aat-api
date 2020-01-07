@@ -113,6 +113,6 @@ type Source struct {
 }
 
 // Upsert updates or inserts a subject.
-func (m *Subject) Upsert(selector interface{}, subject interface{}) error {
-	return database.Upsert(selector, subject)
+func (m *Subject) Upsert(query interface{}, subject interface{}) error {
+	return database.Upsert(query, subject)
 }

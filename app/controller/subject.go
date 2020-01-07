@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/globalsign/mgo/bson"
-	_ "github.com/joho/godotenv/autoload"
+	_ "github.com/joho/godotenv/autoload" // initialize
 	"github.com/memochou1993/thesaurus/app/model"
 	"github.com/memochou1993/thesaurus/app/parser"
+	"go.mongodb.org/mongo-driver/bson"
 )
 
 var (
@@ -18,7 +18,6 @@ var (
 
 func response(w http.ResponseWriter, code int, payload interface{}) {
 	w.Header().Set("Content-Type", "application/json")
-
 	w.WriteHeader(code)
 
 	if err := json.NewEncoder(w).Encode(payload); err != nil {
@@ -31,12 +30,17 @@ func response(w http.ResponseWriter, code int, payload interface{}) {
 func Import(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	resource := os.Getenv("RESOURCE_PATH")
-
-	parser.Parse(resource, &vocabulary)
+	file := os.Getenv("RESOURCE_PATH")
+	parser.Parse(file, &vocabulary)
 
 	for _, subject := range vocabulary.Subjects {
-		subject.Upsert(bson.M{"subjectId": subject.SubjectID}, subject)
+		query := bson.M{"subjectId": subject.SubjectID}
+		update := bson.M{"$set": subject}
+
+		if err := subject.Upsert(query, update); err != nil {
+			response(w, http.StatusInternalServerError, err.Error())
+			return
+		}
 	}
 
 	response(w, http.StatusCreated, nil)
