@@ -2,17 +2,11 @@ package controller
 
 import (
 	"encoding/json"
-	"encoding/xml"
-	"io/ioutil"
 	"net/http"
-	"os"
 
 	"github.com/globalsign/mgo/bson"
 	"github.com/memochou1993/thesaurus/app/model"
-)
-
-const (
-	resource = "./storage/vocabulary.xml"
+	"github.com/memochou1993/thesaurus/app/parser"
 )
 
 var (
@@ -31,31 +25,16 @@ func response(w http.ResponseWriter, code int, payload interface{}) {
 	}
 }
 
-func parse() {
-	file, err := os.Open(resource)
-	defer file.Close()
-
-	if err != nil {
-		return
-	}
-
-	data, err := ioutil.ReadAll(file)
-
-	if err != nil {
-		return
-	}
-
-	xml.Unmarshal(data, &vocabulary)
-}
-
-// Import imports subjects from XML file.
+// Import imports subjects from a XML file.
 func Import(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	parse()
+	file := "./storage/vocabulary.xml"
 
-	for i := 0; i < len(vocabulary.Subjects); i++ {
-		subject.Upsert(bson.M{"subjectId": vocabulary.Subjects[i].SubjectID}, vocabulary.Subjects[i])
+	parser.Parse(file, &vocabulary)
+
+	for _, subject := range vocabulary.Subjects {
+		subject.Upsert(bson.M{"subjectId": subject.SubjectID}, subject)
 	}
 
 	response(w, http.StatusCreated, nil)

@@ -28,38 +28,22 @@ func init() {
 	s, err := mgo.DialWithInfo(dialInfo)
 
 	if err != nil {
-		log.Fatalln("Error: ", err)
+		log.Fatalln(err.Error())
 	}
 
 	session = s
 }
 
-func connect(db string, collection string) (*mgo.Session, *mgo.Collection) {
+func connect() (*mgo.Session, *mgo.Collection) {
 	s := session.Copy()
 	c := s.DB(db).C(collection)
 
 	return s, c
 }
 
-// Find finds a resource.
-func Find(query interface{}, selector interface{}, result interface{}) error {
-	s, c := connect(db, collection)
-	defer s.Close()
-
-	return c.Find(query).Select(selector).One(result)
-}
-
-// Insert inserts one or more documents.
-func Insert(docs ...interface{}) error {
-	s, c := connect(db, collection)
-	defer s.Close()
-
-	return c.Insert(docs...)
-}
-
 // Upsert updates or inserts one or more documents.
 func Upsert(selector interface{}, update interface{}) error {
-	s, c := connect(db, collection)
+	s, c := connect()
 	defer s.Close()
 
 	_, err := c.Upsert(selector, update)

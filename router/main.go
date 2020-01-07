@@ -5,7 +5,7 @@ import (
 	"github.com/memochou1993/thesaurus/app/controller"
 )
 
-// NewRouter func
+// NewRouter handles the routes.
 func NewRouter() *mux.Router {
 	r := mux.NewRouter()
 

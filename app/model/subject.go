@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/memochou1993/thesaurus/app/database"
+	"github.com/memochou1993/thesaurus/database"
 )
 
 // Vocabulary struct
@@ -110,19 +110,6 @@ type Term struct {
 // Source struct
 type Source struct {
 	SourceID string `xml:"Source_ID" bson:"sourceId" json:"sourceId"`
-}
-
-// Find finds a subject.
-func (m *Subject) Find(query interface{}, selector interface{}) (Subject, error) {
-	var subject Subject
-	err := database.Find(query, selector, &subject)
-
-	return subject, err
-}
-
-// Store stores a subject.
-func (m *Subject) Store(subject interface{}) error {
-	return database.Insert(subject)
 }
 
 // Upsert updates or inserts a subject.
