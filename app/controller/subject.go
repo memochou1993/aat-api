@@ -3,8 +3,10 @@ package controller
 import (
 	"encoding/json"
 	"net/http"
+	"os"
 
 	"github.com/globalsign/mgo/bson"
+	_ "github.com/joho/godotenv/autoload"
 	"github.com/memochou1993/thesaurus/app/model"
 	"github.com/memochou1993/thesaurus/app/parser"
 )
@@ -29,9 +31,9 @@ func response(w http.ResponseWriter, code int, payload interface{}) {
 func Import(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	file := "./storage/vocabulary.xml"
+	resource := os.Getenv("RESOURCE_PATH")
 
-	parser.Parse(file, &vocabulary)
+	parser.Parse(resource, &vocabulary)
 
 	for _, subject := range vocabulary.Subjects {
 		subject.Upsert(bson.M{"subjectId": subject.SubjectID}, subject)

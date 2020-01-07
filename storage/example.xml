@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vocabulary xsi:noNamespaceSchemaLocation="http://vocabsservices.getty.edu/Schemas/AAT/AATGetSubject.xsd" Title="Art &#38; Architecture Thesaurus" Date="2019-12-9">
+	<Subject Subject_ID="300189558">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300055146</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Current</Historic_Flag>
+				<Parent_String>sex (biological characteristic) [300055146], biological concepts [300055128], scientific concepts [300056006], Associated Concepts (hierarchy name) [300055126], Associated Concepts Facet [300264086]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Descriptive_Notes>
+			<Descriptive_Note>
+				<Note_Text>Referring to the sex that in reproduction normally produces sperm cells or male gametes.</Note_Text>
+				<Note_Language>English</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000046682/Random House Dictionary of the English Language (1987)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+			<Descriptive_Note>
+				<Note_Text>Se refiere al sexo que en la reproducción normalmente produce espermatozoides o gametos masculinos.</Note_Text>
+				<Note_Language>Spanish</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000131/CDBP-SNPC</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000051034/TAA database (2000-)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+			<Descriptive_Note>
+				<Note_Text>Verwijst naar het geslacht dat normaal gesproken bij de voortplanting spermacellen of mannelijke geslachtscellen produceert.</Note_Text>
+				<Note_Language>Dutch</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000205/RKD, AAT-Ned</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000099619/AAT-Ned (1994-)</Source_ID>
+						</Source>
+					</Note_Source>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000052381/Van Dale Engels-Nederlands (1989)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+			<Descriptive_Note>
+				<Note_Text>通常指在生殖上可製造精細胞或雄性配子的性別。</Note_Text>
+				<Note_Language>Chinese (traditional)</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+		</Descriptive_Notes>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Merged</Merged_Status>
+		<Hierarchy>sex (biological characteristic) | biological concepts | scientific concepts | Associated Concepts (hierarchy name) | Associated Concepts Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>male</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000189559</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000048328/Contributed as a candidate term</Source_ID>
+						</Source>
+						<Page>Candidate term--McGill--9/90</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000046682/Random House Dictionary of the English Language (1987)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000041001/UNESCO Thesaurus (1977)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000042061/Webster's Third New International Dictionary (1961)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>masculino</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000443163</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70641/Spanish</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000131/CDBP-SNPC</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000051235/Nuevo Espasa Ilustrado 2000, Diccionario Enciclopédico (1999)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000048810/Moliner, Diccionario de uso del español (2004)</Source_ID>
+						</Source>
+						<Page>II:360</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>mannelijk</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000496747</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70261/Dutch</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000205/RKD, AAT-Ned</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000099619/AAT-Ned (1994-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052381/Van Dale Engels-Nederlands (1989)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>雄性</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531598</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72551/Chinese (traditional)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000058246/國立編譯館學術名詞資訊網</Source_ID>
+						</Source>
+						<Page>September 19, 2011</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000058247/牛津當代大辭典</Source_ID>
+						</Source>
+						<Page>p. 1114</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>hsiung hsing</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531601</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72582/Chinese (transliterated Wade-Giles)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>xiong xing</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531599</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72586/Chinese (transliterated Pinyin without tones)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>xióng xìng</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531600</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72584/Chinese (transliterated Hanyu Pinyin)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Associative_Relationships>
+			<Associative_Relationship>
+				<Relationship_Type>related to</Relationship_Type>
+				<Related_Subject_ID>
+					<VP_Subject_ID>300411836</VP_Subject_ID>
+				</Related_Subject_ID>
+				<Historic_Flag>Current</Historic_Flag>
+			</Associative_Relationship>
+			<Associative_Relationship>
+				<Relationship_Type>possessed by/existing in</Relationship_Type>
+				<Related_Subject_ID>
+					<VP_Subject_ID>300025928</VP_Subject_ID>
+				</Related_Subject_ID>
+				<Historic_Flag>Current</Historic_Flag>
+			</Associative_Relationship>
+		</Associative_Relationships>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000000/VP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000131/CDBP-SNPC</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000205/RKD, AAT-Ned</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000024811/CDMARC Subjects: LCSH (1988-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000052381/Van Dale Engels-Nederlands (1989)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+	<Subject Subject_ID="300189557">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300055146</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Current</Historic_Flag>
+				<Parent_String>sex (biological characteristic) [300055146], biological concepts [300055128], scientific concepts [300056006], Associated Concepts (hierarchy name) [300055126], Associated Concepts Facet [300264086]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Descriptive_Notes>
+			<Descriptive_Note>
+				<Note_Text>Referring to the sex that normally produces eggs or female germ cells.</Note_Text>
+				<Note_Language>English</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000046682/Random House Dictionary of the English Language (1987)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+			<Descriptive_Note>
+				<Note_Text>Se refiere al sexo que normalmente produce óvulos o células reproductoras femeninas.</Note_Text>
+				<Note_Language>Spanish</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000131/CDBP-SNPC</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000051034/TAA database (2000-)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+			<Descriptive_Note>
+				<Note_Text>Verwijst naar het geslacht dat normaal gesproken eieren of vrouwelijke geslachtscellen produceert.</Note_Text>
+				<Note_Language>Dutch</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000205/RKD, AAT-Ned</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000099619/AAT-Ned (1994-)</Source_ID>
+						</Source>
+					</Note_Source>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000052381/Van Dale Engels-Nederlands (1989)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+			<Descriptive_Note>
+				<Note_Text>通常指可產卵或雌性生殖細胞的性別。</Note_Text>
+				<Note_Language>Chinese (traditional)</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+		</Descriptive_Notes>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Merged</Merged_Status>
+		<Hierarchy>sex (biological characteristic) | biological concepts | scientific concepts | Associated Concepts (hierarchy name) | Associated Concepts Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>female</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000189557</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000048328/Contributed as a candidate term</Source_ID>
+						</Source>
+						<Page>Candidate term--McGill--9/90</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000046682/Random House Dictionary of the English Language (1987)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000041001/UNESCO Thesaurus (1977)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000042061/Webster's Third New International Dictionary (1961)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>femenino</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000443162</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70641/Spanish</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000131/CDBP-SNPC</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000051219/Diccionario de términos científicos y técnicos (1981)</Source_ID>
+						</Source>
+						<Page>5:2389</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>vrouwelijk</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000496746</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70261/Dutch</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000205/RKD, AAT-Ned</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000099619/AAT-Ned (1994-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052381/Van Dale Engels-Nederlands (1989)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>雌性</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531594</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72551/Chinese (traditional)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000058243/國立編譯館學術名詞資訊網</Source_ID>
+						</Source>
+						<Page>December 23, 2011</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000058244/中央研究院中英雙語知識本體詞網</Source_ID>
+						</Source>
+						<Page>December 23, 2011</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000058245/智慧藏百科全書網</Source_ID>
+						</Source>
+						<Page>December 23, 2011</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>ci xing</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531595</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72586/Chinese (transliterated Pinyin without tones)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>cí xìng</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531596</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72584/Chinese (transliterated Hanyu Pinyin)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>tz'u hsing</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000531597</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>72582/Chinese (transliterated Wade-Giles)</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000052784/TELDAP database (2009-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Associative_Relationships>
+			<Associative_Relationship>
+				<Relationship_Type>related to</Relationship_Type>
+				<Related_Subject_ID>
+					<VP_Subject_ID>300411837</VP_Subject_ID>
+				</Related_Subject_ID>
+				<Historic_Flag>Current</Historic_Flag>
+			</Associative_Relationship>
+			<Associative_Relationship>
+				<Relationship_Type>possessed by/existing in</Relationship_Type>
+				<Related_Subject_ID>
+					<VP_Subject_ID>300025943</VP_Subject_ID>
+				</Related_Subject_ID>
+				<Historic_Flag>Current</Historic_Flag>
+			</Associative_Relationship>
+		</Associative_Relationships>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000000/VP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000131/CDBP-SNPC</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000250/AS-Academia Sinica</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000205/RKD, AAT-Ned</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000024811/CDMARC Subjects: LCSH (1988-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000052381/Van Dale Engels-Nederlands (1989)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+	<Subject Subject_ID="300435686">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435690</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Current</Historic_Flag>
+				<Parent_String>addresses (communications concepts) [300435690], communications concepts [300235701], Associated Concepts (hierarchy name) [300055126], Associated Concepts Facet [300264086]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+			<Non-Preferred_Parent>
+				<Parent_Subject_ID>300404626</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Current</Historic_Flag>
+				<Parent_String>identification numbers [300404626], identification numbers and codes [300417447], identifying artifacts [300200896], information artifacts by function [300137961], information artifacts [300230425], information forms (objects) [300220751], Information Forms (hierarchy name) [300026029], Visual and Verbal Communication (hierarchy name) [300264552], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Non-Preferred_Parent>
+		</Parent_Relationships>
+		<Descriptive_Notes>
+			<Descriptive_Note>
+				<Note_Text>Strings of characters that uniquely identify a location on the internet or other network to which email can be sent; the email address is typically a point of contact for a particular individual or organization.</Note_Text>
+				<Note_Language>English</Note_Language>
+				<Note_Contributors>
+					<Note_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+					</Note_Contributor>
+				</Note_Contributors>
+				<Note_Sources>
+					<Note_Source>
+						<Source>
+							<Source_ID>2000105988/Oxford English Dictionary Online (2002-)</Source_ID>
+						</Source>
+					</Note_Source>
+				</Note_Sources>
+			</Descriptive_Note>
+		</Descriptive_Notes>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>addresses (communications concepts) | communications concepts | Associated Concepts (hierarchy name) | Associated Concepts Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>email addresses</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000810749</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Plural Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000105988/Oxford English Dictionary Online (2002-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000093795/Encyclopedia Britannica Online (2002-)</Source_ID>
+						</Source>
+						<Page>"e-mail (computer science)"; accessed 19 November 2019</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>email address</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000810750</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000105988/Oxford English Dictionary Online (2002-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>addresses, email</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000810751</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000094828/Getty Vocabulary Program rules</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>e-mail addresses</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000810768</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000093795/Encyclopedia Britannica Online (2002-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Associative_Relationships>
+			<Associative_Relationship>
+				<Relationship_Type>associated with</Relationship_Type>
+				<Related_Subject_ID>
+					<VP_Subject_ID>300149026</VP_Subject_ID>
+				</Related_Subject_ID>
+				<Historic_Flag>Current</Historic_Flag>
+			</Associative_Relationship>
+		</Associative_Relationships>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000000/VP</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+	</Subject>
+	<Subject Subject_ID="300420123">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435696</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Undetermined</Historic_Flag>
+				<Parent_String>temporary alphabetical list: water transportation equipment [300435696], water transportation equipment [300419972], vehicle equipment [300228142], equipment by context [300239170], equipment [300122241], Tools and Equipment (hierarchy name) [300022238], Furnishings and Equipment (hierarchy name) [300264551], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>&lt;temporary alphabetical list: water transportation equipment&gt; | water transportation equipment | vehicle equipment | &lt;equipment by context&gt; | equipment | Tools and Equipment (hierarchy name) | Furnishings and Equipment (hierarchy name) | Objects Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>anchor chain</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000779690</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>12405</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/12405; scheme: Nomenclature-Objects</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>chaîne d'ancrage</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000779691</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70271/French</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>feminine singular noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/12405; scheme: Nomenclature-Objects</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>12405</Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000299/AASLH</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+	<Subject Subject_ID="300420324">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435697</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Undetermined</Historic_Flag>
+				<Parent_String>temporary alphabetical list: weapons [300435697], weapons [300036926], Weapons and Ammunition (hierarchy name) [300036743], Furnishings and Equipment (hierarchy name) [300264551], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>&lt;temporary alphabetical list: weapons&gt; | weapons | Weapons and Ammunition (hierarchy name) | Furnishings and Equipment (hierarchy name) | Objects Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>armaments</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000780024</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/7734; scheme: Nomenclature-Objects</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>7734</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>armement</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000780025</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70271/French</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>neuter singular noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/7734; scheme: Nomenclature-Objects</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>7734</Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000299/AASLH</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+	<Subject Subject_ID="300420213">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435701</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Undetermined</Historic_Flag>
+				<Parent_String>temporary alphabetical list: woodworking equipment [300435701], woodworking equipment [300163322], equipment by material processed [300168082], equipment [300122241], Tools and Equipment (hierarchy name) [300022238], Furnishings and Equipment (hierarchy name) [300264551], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>&lt;temporary alphabetical list: woodworking equipment&gt; | woodworking equipment | &lt;equipment by material processed&gt; | equipment | Tools and Equipment (hierarchy name) | Furnishings and Equipment (hierarchy name) | Objects Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>annular bits</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000810830</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Descriptor</Term_Type>
+						<Part_of_Speech>Plural Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000036401/Salaman, Dictionary of Tools Used in Woodworking (1975)</Source_ID>
+						</Source>
+						<Page>77</Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>annular bit</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000779839</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/7204; scheme: Nomenclature-Objects</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>7204</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>trépan annulaire</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000779840</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70271/French</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>masculine singular noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>7204</Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/7204; scheme: Nomenclature-Objects</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>bits, annular</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000810831</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Used For Term</Term_Type>
+						<Part_of_Speech>Undetermined</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000000/VP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000094828/Getty Vocabulary Program rules</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000299/AASLH</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000000/VP</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+</Vocabulary>
