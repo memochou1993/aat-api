@@ -2,6 +2,8 @@ package model
 
 import (
 	"github.com/memochou1993/thesaurus/database"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo"
 )
 
 const (
@@ -119,4 +121,18 @@ type Source struct {
 // Upsert updates or inserts a subject.
 func (m *Subject) Upsert(query interface{}, subject interface{}) error {
 	return database.Upsert(collection, query, subject)
+}
+
+// BulkUpsert bulk updates or inserts subjects.
+func (m *Subject) BulkUpsert(subjects []Subject) error {
+	models := []mongo.WriteModel{}
+
+	for _, subject := range subjects {
+		query := bson.M{"subjectId": subject.SubjectID}
+		update := bson.M{"$set": subject}
+		model := mongo.NewUpdateOneModel()
+		models = append(models, model.SetFilter(query).SetUpdate(update).SetUpsert(true))
+	}
+
+	return database.BulkUpsert(collection, models)
 }

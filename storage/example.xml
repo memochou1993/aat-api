@@ -1593,4 +1593,700 @@
 			</Subject_Source>
 		</Subject_Sources>
 	</Subject>
+	<Subject Subject_ID="300422082">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435703</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Undetermined</Historic_Flag>
+				<Parent_String>temporary alphabetical list: worn costume accessories [300435703], worn costume accessories [300209274], costume accessories [300209273], costume (mode of fashion) [300178802], Costume (hierarchy name) [300209261], Furnishings and Equipment (hierarchy name) [300264551], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>&lt;temporary alphabetical list: worn costume accessories&gt; | worn costume accessories | costume accessories | costume (mode of fashion) | Costume (hierarchy name) | Furnishings and Equipment (hierarchy name) | Objects Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>bolo slide</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000781943</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>2108</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/2108; scheme: Nomenclature-Objects</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>collier bolo</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000781944</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70271/French</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>masculine singular noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/2108; scheme: Nomenclature-Objects</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>2108</Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000299/AASLH</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+	<Subject Subject_ID="300421683">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435705</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Undetermined</Historic_Flag>
+				<Parent_String>temporary alphabetical list: culinary equipment [300435705], culinary equipment [300199765], equipment by context [300239170], equipment [300122241], Tools and Equipment (hierarchy name) [300022238], Furnishings and Equipment (hierarchy name) [300264551], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>&lt;temporary alphabetical list: culinary equipment&gt; | culinary equipment | &lt;equipment by context&gt; | equipment | Tools and Equipment (hierarchy name) | Furnishings and Equipment (hierarchy name) | Objects Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>acidity tester</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000779253</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/4570; scheme: Nomenclature-Objects</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>4570</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>acidimètre à fromage</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000779254</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70271/French</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>masculine singular noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/4570; scheme: Nomenclature-Objects</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>4570</Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000299/AASLH</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+	<Subject Subject_ID="300421925">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435597</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Undetermined</Historic_Flag>
+				<Parent_String>temporary alphabetical list: protective wear [300435597], protective wear [300209266], costume by function [300212133], costume (mode of fashion) [300178802], Costume (hierarchy name) [300209261], Furnishings and Equipment (hierarchy name) [300264551], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+			<Non-Preferred_Parent>
+				<Parent_Subject_ID>300046131</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Current</Historic_Flag>
+				<Parent_String>aprons (protective wear) [300046131], protective wear [300209266], costume by function [300212133], costume (mode of fashion) [300178802], Costume (hierarchy name) [300209261], Furnishings and Equipment (hierarchy name) [300264551], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Non-Preferred_Parent>
+		</Parent_Relationships>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>&lt;temporary alphabetical list: protective wear&gt; | protective wear | &lt;costume by function&gt; | costume (mode of fashion) | Costume (hierarchy name) | Furnishings and Equipment (hierarchy name) | Objects Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>blacksmith's apron</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000781635</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>2597</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106168/Parks Canada Descriptive Dictionary of Objects / Dictionnaire descriptif d’objets (c 1996) </Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/2597; scheme: Nomenclature-Objects</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>tablier de forgeron</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000781636</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70271/French</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>masculine singular noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/2597; scheme: Nomenclature-Objects</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>2597</Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106168/Parks Canada Descriptive Dictionary of Objects / Dictionnaire descriptif d’objets (c 1996) </Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000299/AASLH</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106168/Parks Canada Descriptive Dictionary of Objects / Dictionnaire descriptif d’objets (c 1996) </Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
+	<Subject Subject_ID="300423220">
+		<Parent_Relationships>
+			<Preferred_Parent>
+				<Parent_Subject_ID>300435598</Parent_Subject_ID>
+				<Relationship_Type>Parent/Child</Relationship_Type>
+				<Historic_Flag>Undetermined</Historic_Flag>
+				<Parent_String>temporary alphabetical list: public buildings [300435598], public buildings (governmental buildings) [300008059], single built works by function [300004894], single built works by specific type [300004795], single built works (built environment) [300004790], Single Built Works (hierarchy name) [300004789], Built Environment (hierarchy name) [300264550], Objects Facet [300264092]</Parent_String>
+				<Hier_Rel_Type>Genus/Species-BTG</Hier_Rel_Type>
+			</Preferred_Parent>
+		</Parent_Relationships>
+		<Record_Type>Concept</Record_Type>
+		<Merged_Status>Not Merged</Merged_Status>
+		<Hierarchy>&lt;temporary alphabetical list: public buildings&gt; | public buildings (governmental buildings) | &lt;single built works by function&gt; | &lt;single built works by specific type&gt; | single built works (built environment) | Single Built Works (hierarchy name) | Built Environment (hierarchy name) | Objects Facet</Hierarchy>
+		<Sort_Order>1</Sort_Order>
+		<Terms>
+			<Preferred_Term>
+				<Term_Text>civic &amp;amp; social structures</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000784479</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70051/English</Language>
+						<Preferred>Non Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>Singular Noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/597; scheme: Nomenclature-Objects</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>597</Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Preferred_Term>
+			<Non-Preferred_Term>
+				<Term_Text>constructions civiques et sociales</Term_Text>
+				<Display_Name>N/A</Display_Name>
+				<Historic_Flag>Current</Historic_Flag>
+				<Vernacular>Undetermined</Vernacular>
+				<Term_ID>1000784480</Term_ID>
+				<Term_Languages>
+					<Term_Language>
+						<Language>70271/French</Language>
+						<Preferred>Preferred</Preferred>
+						<Qualifier>
+            </Qualifier>
+						<Term_Type>Alternate Descriptor</Term_Type>
+						<Part_of_Speech>neuter singular noun</Part_of_Speech>
+						<Lang_Stat>Undetermined</Lang_Stat>
+					</Term_Language>
+				</Term_Languages>
+				<Term_Contributors>
+					<Term_Contributor>
+						<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+					<Term_Contributor>
+						<Contributor_id>10000299/AASLH</Contributor_id>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Contributor>
+				</Term_Contributors>
+				<Term_Sources>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Non Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+						</Source>
+						<Page>http://nomenclature.info/nom/597; scheme: Nomenclature-Objects</Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+						</Source>
+						<Page>597</Page>
+						<Preferred>Unknown</Preferred>
+					</Term_Source>
+					<Term_Source>
+						<Source>
+							<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+						</Source>
+						<Page>
+            </Page>
+						<Preferred>Alternate Preferred</Preferred>
+					</Term_Source>
+				</Term_Sources>
+			</Non-Preferred_Term>
+		</Terms>
+		<Subject_Contributors>
+			<Subject_Contributor>
+				<Contributor_id>10000159/CHIN / RCIP</Contributor_id>
+			</Subject_Contributor>
+			<Subject_Contributor>
+				<Contributor_id>10000299/AASLH</Contributor_id>
+			</Subject_Contributor>
+		</Subject_Contributors>
+		<Subject_Sources>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106160/Nomenclature database (2018-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106165/AASLH data (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106166/Nomenclature for Museum Cataloging / Nomenclature pour le catalogage translation project (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+			<Subject_Source>
+				<Source>
+					<Source_ID>2000106167/CHIN / RCIP translation (2016-)</Source_ID>
+				</Source>
+			</Subject_Source>
+		</Subject_Sources>
+	</Subject>
 </Vocabulary>

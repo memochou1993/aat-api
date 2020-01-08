@@ -8,7 +8,6 @@ import (
 	_ "github.com/joho/godotenv/autoload" // initialize
 	"github.com/memochou1993/thesaurus/app/model"
 	"github.com/memochou1993/thesaurus/app/parser"
-	"go.mongodb.org/mongo-driver/bson"
 )
 
 var (
@@ -33,14 +32,9 @@ func Import(w http.ResponseWriter, r *http.Request) {
 	file := os.Getenv("RESOURCE_PATH")
 	parser.Parse(file, &vocabulary)
 
-	for _, subject := range vocabulary.Subjects {
-		query := bson.M{"subjectId": subject.SubjectID}
-		update := bson.M{"$set": subject}
-
-		if err := subject.Upsert(query, update); err != nil {
-			response(w, http.StatusInternalServerError, err.Error())
-			return
-		}
+	if err := subject.BulkUpsert(vocabulary.Subjects); err != nil {
+		response(w, http.StatusInternalServerError, err.Error())
+		return
 	}
 
 	response(w, http.StatusCreated, nil)
