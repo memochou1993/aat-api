@@ -28,28 +28,7 @@ func init() {
 	}
 }
 
-// Upsert updates or inserts a document.
-func Upsert(collection string, query interface{}, update interface{}) error {
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	defer cancel()
-
-	c := client.Database(database).Collection(collection)
-
-	opts := options.Update().SetUpsert(true)
-	_, err := c.UpdateOne(ctx, query, update, opts)
-
-	return err
-}
-
-// BulkUpsert bulk updates or inserts documents.
-func BulkUpsert(collection string, models []mongo.WriteModel) error {
-	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Minute)
-	defer cancel()
-
-	c := client.Database(database).Collection(collection)
-
-	opts := options.BulkWrite().SetOrdered(false)
-	_, err := c.BulkWrite(ctx, models, opts)
-
-	return err
+// Connect connects to the database.
+func Connect(collection string) *mongo.Collection {
+	return client.Database(database).Collection(collection)
 }

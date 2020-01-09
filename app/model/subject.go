@@ -1,9 +1,13 @@
 package model
 
 import (
+	"context"
+	"time"
+
 	"github.com/memochou1993/thesaurus/database"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 const (
@@ -118,21 +122,56 @@ type Source struct {
 	SourceID string `xml:"Source_ID" bson:"sourceId" json:"sourceId"`
 }
 
-// Upsert updates or inserts a subject.
-func (m *Subject) Upsert(query interface{}, subject interface{}) error {
-	return database.Upsert(collection, query, subject)
+// FindAll finds all subjects.
+func (v *Vocabulary) FindAll() error {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	c := database.Connect(collection)
+
+	cur, err := c.Find(ctx, bson.M{})
+
+	if err != nil {
+		return err
+	}
+
+	var subjects []Subject
+
+	for cur.Next(ctx) {
+		var subject Subject
+
+		if err := cur.Decode(&subject); err != nil {
+			return err
+		}
+
+		subjects = append(subjects, subject)
+	}
+
+	if err := cur.Err(); err != nil {
+		return err
+	}
+
+	v.Subjects = subjects
+
+	return cur.Close(ctx)
 }
 
 // BulkUpsert bulk updates or inserts subjects.
-func (m *Subject) BulkUpsert(subjects []Subject) error {
+func (v *Vocabulary) BulkUpsert() error {
+	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Minute)
+	defer cancel()
+
 	models := []mongo.WriteModel{}
 
-	for _, subject := range subjects {
+	for _, subject := range v.Subjects {
 		query := bson.M{"subjectId": subject.SubjectID}
 		update := bson.M{"$set": subject}
 		model := mongo.NewUpdateOneModel()
 		models = append(models, model.SetFilter(query).SetUpdate(update).SetUpsert(true))
 	}
 
-	return database.BulkUpsert(collection, models)
+	opts := options.BulkWrite().SetOrdered(false)
+	_, err := database.Connect(collection).BulkWrite(ctx, models, opts)
+
+	return err
 }

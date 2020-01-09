@@ -11,8 +11,7 @@ import (
 )
 
 var (
-	vocabulary = model.Vocabulary{}
-	subject    = model.Subject{}
+	vocabulary model.Vocabulary
 )
 
 func response(w http.ResponseWriter, code int, payload interface{}) {
@@ -25,14 +24,26 @@ func response(w http.ResponseWriter, code int, payload interface{}) {
 	}
 }
 
-// Import imports subjects from a XML file.
+// Index displays a listing of the resource.
+func Index(w http.ResponseWriter, r *http.Request) {
+	defer r.Body.Close()
+
+	if err := vocabulary.FindAll(); err != nil {
+		response(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+
+	response(w, http.StatusOK, vocabulary.Subjects)
+}
+
+// Import imports the resource from a XML file.
 func Import(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
 	file := os.Getenv("RESOURCE_PATH")
 	parser.Parse(file, &vocabulary)
 
-	if err := subject.BulkUpsert(vocabulary.Subjects); err != nil {
+	if err := vocabulary.BulkUpsert(); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
