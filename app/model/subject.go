@@ -161,6 +161,8 @@ func (v *Vocabulary) BulkUpsert() error {
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Minute)
 	defer cancel()
 
+	c := database.Connect(collection)
+
 	models := []mongo.WriteModel{}
 
 	for _, subject := range v.Subjects {
@@ -171,7 +173,7 @@ func (v *Vocabulary) BulkUpsert() error {
 	}
 
 	opts := options.BulkWrite().SetOrdered(false)
-	_, err := database.Connect(collection).BulkWrite(ctx, models, opts)
+	_, err := c.BulkWrite(ctx, models, opts)
 
 	return err
 }
