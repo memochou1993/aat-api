@@ -4,17 +4,18 @@ import (
 	"encoding/json"
 	"net/http"
 	"os"
-	"strconv"
 
 	_ "github.com/joho/godotenv/autoload" // initialize
 	"github.com/memochou1993/thesaurus/app/model"
+	"github.com/memochou1993/thesaurus/app/mutator"
 	"github.com/memochou1993/thesaurus/app/parser"
 	"github.com/memochou1993/thesaurus/app/validator"
 )
 
 var (
-	vocabulary model.Vocabulary
-	query      validator.Query
+	vocabulary     model.Vocabulary
+	queryValidator validator.Query
+	queryMutator   mutator.Query
 )
 
 func response(w http.ResponseWriter, code int, payload interface{}) {
@@ -31,21 +32,21 @@ func response(w http.ResponseWriter, code int, payload interface{}) {
 func Index(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	request, err := query.Validate(r)
+	query, err := queryValidator.Validate(r)
 
 	if err != nil {
 		response(w, http.StatusUnprocessableEntity, err.Error())
 		return
 	}
 
-	page, err := strconv.ParseInt(request.Page, 10, 64)
+	mutator, err := queryMutator.Mutate(query)
 
 	if err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
 
-	if err := vocabulary.FindAll((page-1)*10, 10); err != nil {
+	if err := vocabulary.FindAll((mutator.Page-1)*10, 10); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
