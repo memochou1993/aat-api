@@ -123,13 +123,14 @@ type Source struct {
 }
 
 // FindAll finds all subjects.
-func (v *Vocabulary) FindAll() error {
+func (v *Vocabulary) FindAll(skip int64, limit int64) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	c := database.Connect(collection)
 
-	cur, err := c.Find(ctx, bson.M{})
+	opts := options.Find().SetSkip(skip).SetLimit(limit)
+	cur, err := c.Find(ctx, bson.M{}, opts)
 
 	if err != nil {
 		return err
