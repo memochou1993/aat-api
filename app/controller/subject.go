@@ -65,5 +65,10 @@ func Import(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	if err := vocabulary.PopulateIndex(); err != nil {
+		response(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+
 	response(w, http.StatusCreated, nil)
 }

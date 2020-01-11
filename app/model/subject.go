@@ -178,3 +178,23 @@ func (v *Vocabulary) BulkUpsert() error {
 
 	return err
 }
+
+// PopulateIndex populates the index of subjects.
+func (v *Vocabulary) PopulateIndex() error {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	c := database.Connect(collection)
+
+	models := []mongo.IndexModel{
+		{
+			Keys:    bson.M{"subjectId": 1},
+			Options: options.Index().SetName("subjectId"),
+		},
+	}
+
+	opts := options.CreateIndexes().SetMaxTime(2 * time.Second)
+	_, err := c.Indexes().CreateMany(ctx, models, opts)
+
+	return err
+}
