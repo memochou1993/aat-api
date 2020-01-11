@@ -12,20 +12,26 @@ var (
 
 // Query struct
 type Query struct {
-	Page string `validate:"required,numeric"`
+	Page string `validate:"numeric"`
 }
 
 func init() {
 	validate = validator.New()
 }
 
-// Validate func
-func (q *Query) Validate(r *http.Request) (*Query, error) {
-	query := r.URL.Query()
+func mutateQuery(r *http.Request, key string, defaultValue string) string {
+	query := r.URL.Query().Get(key)
 
-	q = &Query{
-		Page: query.Get("page"),
+	if query == "" {
+		query = defaultValue
 	}
 
-	return q, validate.Struct(q)
+	return query
+}
+
+// Validate validates the query.
+func (q *Query) Validate(r *http.Request) error {
+	q.Page = mutateQuery(r, "page", "1")
+
+	return validate.Struct(q)
 }

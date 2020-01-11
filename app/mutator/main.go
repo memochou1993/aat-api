@@ -10,11 +10,21 @@ type Query struct {
 	Page int64
 }
 
+func mutatePage(value string) (int64, error) {
+	page, err := strconv.ParseInt(value, 10, 64)
+
+	if page < 1 {
+		page = 1
+	}
+
+	return page, err
+}
+
 // Mutate mutates the query.
-func (q *Query) Mutate(query *validator.Query) (*Query, error) {
-	page, err := strconv.ParseInt(query.Page, 10, 64)
+func (q *Query) Mutate(query *validator.Query) error {
+	page, err := mutatePage(query.Page)
 
 	q.Page = page
 
-	return q, err
+	return err
 }

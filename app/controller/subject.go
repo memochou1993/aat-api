@@ -32,21 +32,17 @@ func response(w http.ResponseWriter, code int, payload interface{}) {
 func Index(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	query, err := queryValidator.Validate(r)
-
-	if err != nil {
+	if err := queryValidator.Validate(r); err != nil {
 		response(w, http.StatusUnprocessableEntity, err.Error())
 		return
 	}
 
-	mutator, err := queryMutator.Mutate(query)
-
-	if err != nil {
+	if err := queryMutator.Mutate(&queryValidator); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
 
-	if err := vocabulary.FindAll((mutator.Page-1)*10, 10); err != nil {
+	if err := vocabulary.FindAll((queryMutator.Page-1)*10, 10); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
