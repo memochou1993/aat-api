@@ -136,10 +136,10 @@ func (v *Vocabulary) FindAll(skip int64, limit int64) error {
 		return err
 	}
 
-	var subjects []Subject
+	subjects := []Subject{}
 
 	for cur.Next(ctx) {
-		var subject Subject
+		subject := Subject{}
 
 		if err := cur.Decode(&subject); err != nil {
 			return err
@@ -186,35 +186,23 @@ func (v *Vocabulary) PopulateIndex() error {
 
 	c := database.Connect(collection)
 
-	models := []mongo.IndexModel{
-		{
-			Keys:    bson.M{"subjectId": 1},
-			Options: options.Index().SetName("subjectId"),
-		},
-		{
-			Keys:    bson.M{"parentRelationship.preferredParents.parentSubjectId": 1},
-			Options: options.Index().SetName("parentRelationship.preferredParents.parentSubjectId"),
-		},
-		{
-			Keys:    bson.M{"parentRelationship.nonPreferredParents.parentSubjectId": 1},
-			Options: options.Index().SetName("parentRelationship.nonPreferredParents.parentSubjectId"),
-		},
-		{
-			Keys:    bson.M{"associativeRelationship.associativeRelationships.relatedSubjectId.vpSubjectId": 1},
-			Options: options.Index().SetName("associativeRelationship.associativeRelationships.relatedSubjectId.vpSubjectId"),
-		},
-		{
-			Keys:    bson.M{"term.preferredTerms.termId": 1},
-			Options: options.Index().SetName("term.preferredTerms.termId"),
-		},
-		{
-			Keys:    bson.M{"term.nonPreferredTerms.termId": 1},
-			Options: options.Index().SetName("term.nonPreferredTerms.termId"),
-		},
-		{
-			Keys:    bson.M{"subjectContributor.subjectContributors.contributorId": 1},
-			Options: options.Index().SetName("subjectContributor.subjectContributors.contributorId"),
-		},
+	keys := []string{
+		"subjectId",
+		"parentRelationship.preferredParents.parentSubjectId",
+		"parentRelationship.nonPreferredParents.parentSubjectId",
+		"associativeRelationship.associativeRelationships.relatedSubjectId.vpSubjectId",
+		"term.preferredTerms.termId",
+		"term.nonPreferredTerms.termId",
+	}
+
+	models := []mongo.IndexModel{}
+
+	for _, key := range keys {
+		model := mongo.IndexModel{
+			Keys:    bson.M{key: 1},
+			Options: options.Index().SetName(key),
+		}
+		models = append(models, model)
 	}
 
 	opts := options.CreateIndexes().SetMaxTime(10 * time.Second)
