@@ -4,6 +4,7 @@ import (
 	"context"
 	"time"
 
+	"github.com/memochou1993/thesaurus/app/mutator"
 	"github.com/memochou1993/thesaurus/database"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -123,7 +124,7 @@ type Source struct {
 }
 
 // FindAll finds all subjects.
-func (v *Vocabulary) FindAll(term string, skip int64, limit int64) error {
+func (v *Vocabulary) FindAll(query *mutator.Query) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
@@ -131,12 +132,12 @@ func (v *Vocabulary) FindAll(term string, skip int64, limit int64) error {
 
 	filter := bson.M{
 		"$or": []bson.M{
-			bson.M{"term.preferredTerms.termText": bson.M{"$regex": ".*" + term + ".*"}},
-			bson.M{"term.nonPreferredTerms.termText": bson.M{"$regex": ".*" + term + ".*"}},
+			bson.M{"term.preferredTerms.termText": bson.M{"$regex": ".*" + query.Term + ".*"}},
+			bson.M{"term.nonPreferredTerms.termText": bson.M{"$regex": ".*" + query.Term + ".*"}},
 		},
 	}
 
-	opts := options.Find().SetSkip(skip).SetLimit(limit)
+	opts := options.Find().SetSkip((query.Page - 1) * query.PageSize).SetLimit(query.PageSize)
 	cur, err := c.Find(ctx, filter, opts)
 
 	if err != nil {
