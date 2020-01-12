@@ -123,14 +123,21 @@ type Source struct {
 }
 
 // FindAll finds all subjects.
-func (v *Vocabulary) FindAll(skip int64, limit int64) error {
+func (v *Vocabulary) FindAll(term string, skip int64, limit int64) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
 	c := database.Connect(collection)
 
+	filter := bson.M{
+		"$or": []bson.M{
+			bson.M{"term.preferredTerms.termText": bson.M{"$regex": ".*" + term + ".*"}},
+			bson.M{"term.nonPreferredTerms.termText": bson.M{"$regex": ".*" + term + ".*"}},
+		},
+	}
+
 	opts := options.Find().SetSkip(skip).SetLimit(limit)
-	cur, err := c.Find(ctx, bson.M{}, opts)
+	cur, err := c.Find(ctx, filter, opts)
 
 	if err != nil {
 		return err

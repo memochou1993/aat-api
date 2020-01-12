@@ -7,6 +7,7 @@ import (
 
 // Query struct
 type Query struct {
+	Term     string
 	Page     int64
 	PageSize int64
 }
@@ -36,6 +37,7 @@ func (q *Query) Mutate(query *validator.Query) error {
 	page, err := mutatePage(query.Page)
 	pageSize, err := mutatePageSize(query.PageSize)
 
+	q.Term = query.Term
 	q.Page = page
 	q.PageSize = pageSize
 

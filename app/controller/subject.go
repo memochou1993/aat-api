@@ -42,10 +42,11 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	term := queryMutator.Term
 	skip := (queryMutator.Page - 1) * queryMutator.PageSize
 	limit := queryMutator.PageSize
 
-	if err := vocabulary.FindAll(skip, limit); err != nil {
+	if err := vocabulary.FindAll(term, skip, limit); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}

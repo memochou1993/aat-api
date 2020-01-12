@@ -12,6 +12,7 @@ var (
 
 // Query struct
 type Query struct {
+	Term     string `validate:""`
 	Page     string `validate:"numeric"`
 	PageSize string `validate:"numeric"`
 }
@@ -32,6 +33,7 @@ func mutateQuery(r *http.Request, key string, defaultValue string) string {
 
 // Validate validates the query.
 func (q *Query) Validate(r *http.Request) error {
+	q.Term = mutateQuery(r, "term", "")
 	q.Page = mutateQuery(r, "page", "1")
 	q.PageSize = mutateQuery(r, "pageSize", "10")
 
