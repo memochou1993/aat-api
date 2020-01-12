@@ -69,7 +69,7 @@ type Subject struct {
 
 // ParentRelationship struct
 type ParentRelationship struct {
-	ParentSubjectID  string `xml:"Parent_Subject_ID" bson:"parentSubjectID" json:"parentSubjectID"`
+	ParentSubjectID  string `xml:"Parent_Subject_ID" bson:"parentSubjectId" json:"parentSubjectId"`
 	RelationshipType string `xml:"Relationship_Type" bson:"relationshipType" json:"relationshipType"`
 	HistoricFlag     string `xml:"Historic_Flag" bson:"historicFlag" json:"historicFlag"`
 	ParentString     string `xml:"Parent_String" bson:"parentString" json:"parentString"`
@@ -80,7 +80,7 @@ type ParentRelationship struct {
 type AssociativeRelationship struct {
 	RelationshipType string `xml:"Relationship_Type" bson:"relationshipType" json:"relationshipType"`
 	RelatedSubjectID struct {
-		VPSubjectID string `xml:"VP_Subject_ID" bson:"vpSubjectID" json:"vpSubjectID"`
+		VPSubjectID string `xml:"VP_Subject_ID" bson:"vpSubjectId" json:"vpSubjectId"`
 	} `xml:"Related_Subject_ID" bson:"relatedSubjectId" json:"relatedSubjectId"`
 	HistoricFlag string `xml:"Historic_Flag" bson:"historicFlag" json:"historicFlag"`
 }
@@ -191,9 +191,33 @@ func (v *Vocabulary) PopulateIndex() error {
 			Keys:    bson.M{"subjectId": 1},
 			Options: options.Index().SetName("subjectId"),
 		},
+		{
+			Keys:    bson.M{"parentRelationship.preferredParents.parentSubjectId": 1},
+			Options: options.Index().SetName("parentRelationship.preferredParents.parentSubjectId"),
+		},
+		{
+			Keys:    bson.M{"parentRelationship.nonPreferredParents.parentSubjectId": 1},
+			Options: options.Index().SetName("parentRelationship.nonPreferredParents.parentSubjectId"),
+		},
+		{
+			Keys:    bson.M{"associativeRelationship.associativeRelationships.relatedSubjectId.vpSubjectId": 1},
+			Options: options.Index().SetName("associativeRelationship.associativeRelationships.relatedSubjectId.vpSubjectId"),
+		},
+		{
+			Keys:    bson.M{"term.preferredTerms.termId": 1},
+			Options: options.Index().SetName("term.preferredTerms.termId"),
+		},
+		{
+			Keys:    bson.M{"term.nonPreferredTerms.termId": 1},
+			Options: options.Index().SetName("term.nonPreferredTerms.termId"),
+		},
+		{
+			Keys:    bson.M{"subjectContributor.subjectContributors.contributorId": 1},
+			Options: options.Index().SetName("subjectContributor.subjectContributors.contributorId"),
+		},
 	}
 
-	opts := options.CreateIndexes().SetMaxTime(2 * time.Second)
+	opts := options.CreateIndexes().SetMaxTime(10 * time.Second)
 	_, err := c.Indexes().CreateMany(ctx, models, opts)
 
 	return err
