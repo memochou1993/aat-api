@@ -6,6 +6,7 @@ import (
 	"os"
 
 	_ "github.com/joho/godotenv/autoload" // initialize
+	"github.com/memochou1993/thesaurus/app/formatter"
 	"github.com/memochou1993/thesaurus/app/model"
 	"github.com/memochou1993/thesaurus/app/mutator"
 	"github.com/memochou1993/thesaurus/app/parser"
@@ -13,9 +14,10 @@ import (
 )
 
 var (
-	vocabulary     model.Vocabulary
-	queryValidator validator.Query
-	queryMutator   mutator.Query
+	subjectModel       model.Subjects
+	queryValidator     validator.Query
+	queryMutator       mutator.Query
+	payloadTransformer formatter.Payload
 )
 
 func response(w http.ResponseWriter, code int, payload interface{}) {
@@ -42,12 +44,14 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if err := vocabulary.FindAll(&queryMutator); err != nil {
+	if err := subjectModel.FindAll(&queryMutator); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
 
-	response(w, http.StatusOK, vocabulary.Subjects)
+	payloadTransformer.Get(&subjectModel)
+
+	response(w, http.StatusOK, payloadTransformer)
 }
 
 // Import imports the resource from a XML file.
@@ -55,14 +59,14 @@ func Import(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
 	file := os.Getenv("RESOURCE_PATH")
-	parser.Parse(file, &vocabulary)
+	parser.Parse(file, &subjectModel)
 
-	if err := vocabulary.BulkUpsert(); err != nil {
+	if err := subjectModel.BulkUpsert(); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
 
-	if err := vocabulary.PopulateIndex(); err != nil {
+	if err := subjectModel.PopulateIndex(); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}

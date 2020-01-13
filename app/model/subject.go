@@ -16,31 +16,29 @@ const (
 	collection = "subjects"
 )
 
-// Vocabulary struct
-type Vocabulary struct {
-	Title    string    `xml:"Title,attr"`
-	Date     string    `xml:"Date,attr"`
-	Subjects []Subject `xml:"Subject" bson:"subjects" json:"subjects"`
+// Subjects struct
+type Subjects struct {
+	Subjects *[]Subject `xml:"Subject" bson:"subjects" json:"subjects"`
 }
 
 // Subject struct
 type Subject struct {
 	SubjectID           string `xml:"Subject_ID,attr" bson:"subjectId" json:"subjectId"`
 	ParentRelationships struct {
-		PreferredParent    []ParentRelationship `xml:"Preferred_Parent" bson:"preferredParents" json:"preferredParents"`
-		NonPreferredParent []ParentRelationship `xml:"Non-Preferred_Parent" bson:"nonPreferredParents" json:"nonPreferredParents"`
+		PreferredParent    *[]ParentRelationship `xml:"Preferred_Parent" bson:"preferredParents" json:"preferredParents"`
+		NonPreferredParent *[]ParentRelationship `xml:"Non-Preferred_Parent" bson:"nonPreferredParents" json:"nonPreferredParents"`
 	} `xml:"Parent_Relationships" bson:"parentRelationship" json:"parentRelationship"`
 	DescriptiveNotes struct {
-		DescriptiveNote []struct {
+		DescriptiveNote *[]struct {
 			NoteText         string `xml:"Note_Text" bson:"noteText" json:"noteText"`
 			NoteLanguage     string `xml:"Note_Language" bson:"noteLanguage" json:"noteLanguage"`
 			NoteContributors struct {
-				NoteContributor []struct {
+				NoteContributor *[]struct {
 					ContributorID string `xml:"Contributor_id" bson:"contributorId" json:"contributorId"`
 				} `xml:"Note_Contributor" bson:"noteContributors" json:"noteContributors"`
 			} `xml:"Note_Contributors" bson:"noteContributor" json:"noteContributor"`
 			NoteSources struct {
-				NoteSource []struct {
+				NoteSource *[]struct {
 					Source Source `xml:"Source" bson:"source" json:"source"`
 				} `xml:"Note_Source" bson:"noteSources" json:"noteSources"`
 			} `xml:"Note_Sources" bson:"noteSource" json:"noteSource"`
@@ -51,19 +49,19 @@ type Subject struct {
 	Hierarchy    string `xml:"Hierarchy" bson:"hierarchy" json:"hierarchy"`
 	SortOrder    string `xml:"Sort_Order" bson:"sortOrder" json:"sortOrder"`
 	Terms        struct {
-		PreferredTerm    []Term `xml:"Preferred_Term" bson:"preferredTerms" json:"preferredTerms"`
-		NonPreferredTerm []Term `xml:"Non-Preferred_Term" bson:"nonPreferredTerms" json:"nonPreferredTerms"`
+		PreferredTerm    *[]Term `xml:"Preferred_Term" bson:"preferredTerms" json:"preferredTerms"`
+		NonPreferredTerm *[]Term `xml:"Non-Preferred_Term" bson:"nonPreferredTerms" json:"nonPreferredTerms"`
 	} `xml:"Terms" bson:"term" json:"term"`
 	AssociativeRelationships struct {
-		AssociativeRelationship []AssociativeRelationship `xml:"Associative_Relationship" bson:"associativeRelationships" json:"associativeRelationships"`
+		AssociativeRelationship *[]AssociativeRelationship `xml:"Associative_Relationship" bson:"associativeRelationships" json:"associativeRelationships"`
 	} `xml:"Associative_Relationships" bson:"associativeRelationship" json:"associativeRelationship"`
 	SubjectContributors struct {
-		SubjectContributor []struct {
+		SubjectContributor *[]struct {
 			ContributorID string `xml:"Contributor_id" bson:"contributorId" json:"contributorId"`
 		} `xml:"Subject_Contributor" bson:"subjectContributors" json:"subjectContributors"`
 	} `xml:"Subject_Contributors" bson:"subjectContributor" json:"subjectContributor"`
 	SubjectSources struct {
-		SubjectSource []struct {
+		SubjectSource *[]struct {
 			Source Source `xml:"Source" bson:"source" json:"source"`
 		} `xml:"Subject_Source" bson:"subjectSources" json:"subjectSources"`
 	} `xml:"Subject_Sources" bson:"subjectSource" json:"subjectSource"`
@@ -95,7 +93,7 @@ type Term struct {
 	Vernacular    string `xml:"Vernacular" bson:"vernacular" json:"vernacular"`
 	TermID        string `xml:"Term_ID" bson:"termId" json:"termId"`
 	TermLanguages struct {
-		TermLanguage []struct {
+		TermLanguage *[]struct {
 			Language     string `xml:"Language" bson:"language" json:"language"`
 			Preferred    string `xml:"Preferred" bson:"preferred" json:"preferred"`
 			Qualifier    string `xml:"Qualifier" bson:"qualifier" json:"qualifier"`
@@ -105,13 +103,13 @@ type Term struct {
 		} `xml:"Term_Language" bson:"termLanguages" json:"termLanguages"`
 	} `xml:"Term_Languages" bson:"termLanguage" json:"termLanguage"`
 	TermContributors struct {
-		TermContributor []struct {
+		TermContributor *[]struct {
 			ContributorID string `xml:"Contributor_id" bson:"contributorId" json:"contributorId"`
 			Preferred     string `xml:"Preferred" bson:"preferred" json:"preferred"`
 		} `xml:"Term_Contributor" bson:"termContributors" json:"termContributors"`
 	} `xml:"Term_Contributors" bson:"termContributor" json:"termContributor"`
 	TermSources struct {
-		TermSource []struct {
+		TermSource *[]struct {
 			Source    Source `xml:"Source" bson:"source" json:"source"`
 			Page      string `xml:"Page" bson:"page" json:"page"`
 			Preferred string `xml:"Preferred" bson:"preferred" json:"preferred"`
@@ -125,7 +123,7 @@ type Source struct {
 }
 
 // FindAll finds all subjects.
-func (v *Vocabulary) FindAll(query *mutator.Query) error {
+func (s *Subjects) FindAll(query *mutator.Query) error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
@@ -154,13 +152,13 @@ func (v *Vocabulary) FindAll(query *mutator.Query) error {
 		return err
 	}
 
-	v.Subjects = subjects
+	s.Subjects = &subjects
 
 	return cur.Close(ctx)
 }
 
 // BulkUpsert bulk updates or inserts subjects.
-func (v *Vocabulary) BulkUpsert() error {
+func (s *Subjects) BulkUpsert() error {
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Minute)
 	defer cancel()
 
@@ -168,7 +166,7 @@ func (v *Vocabulary) BulkUpsert() error {
 
 	models := []mongo.WriteModel{}
 
-	for _, subject := range v.Subjects {
+	for _, subject := range *s.Subjects {
 		query := bson.M{"subjectId": subject.SubjectID}
 		update := bson.M{"$set": subject}
 		model := mongo.NewUpdateOneModel()
@@ -182,7 +180,7 @@ func (v *Vocabulary) BulkUpsert() error {
 }
 
 // PopulateIndex populates the index of subjects.
-func (v *Vocabulary) PopulateIndex() error {
+func (s *Subjects) PopulateIndex() error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
