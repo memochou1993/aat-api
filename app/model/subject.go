@@ -132,8 +132,21 @@ func (v *Vocabulary) FindAll(query *mutator.Query) error {
 
 	filter := bson.M{
 		"$or": []bson.M{
-			bson.M{"term.preferredTerms.termText": bson.M{"$regex": ".*" + query.Term + ".*"}},
-			bson.M{"term.nonPreferredTerms.termText": bson.M{"$regex": ".*" + query.Term + ".*"}},
+			bson.M{
+				"descriptiveNote.descriptiveNotes.noteText": bson.M{
+					"$regex": ".*" + query.Term + ".*",
+				},
+			},
+			bson.M{
+				"term.preferredTerms.termText": bson.M{
+					"$regex": ".*" + query.Term + ".*",
+				},
+			},
+			bson.M{
+				"term.nonPreferredTerms.termText": bson.M{
+					"$regex": ".*" + query.Term + ".*",
+				},
+			},
 		},
 	}
 
