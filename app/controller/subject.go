@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"encoding/json"
 	"net/http"
 	"os"
 
@@ -20,18 +19,8 @@ var (
 	payloadTransformer formatter.Payload
 )
 
-func response(w http.ResponseWriter, code int, payload interface{}) {
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(code)
-
-	if err := json.NewEncoder(w).Encode(payload); err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
-		return
-	}
-}
-
-// Index displays a listing of the resource.
-func Index(w http.ResponseWriter, r *http.Request) {
+// GetSubjects gets the subjects.
+func GetSubjects(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
 	if err := queryValidator.Validate(r); err != nil {
@@ -54,8 +43,8 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	response(w, http.StatusOK, payloadTransformer)
 }
 
-// Import imports the resource from a XML file.
-func Import(w http.ResponseWriter, r *http.Request) {
+// ImportSubjects imports the subjects.
+func ImportSubjects(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
 	file := os.Getenv("RESOURCE_PATH")
