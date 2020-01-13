@@ -4,6 +4,7 @@ import (
 	"context"
 	"time"
 
+	"github.com/memochou1993/thesaurus/app/filter"
 	"github.com/memochou1993/thesaurus/app/mutator"
 	"github.com/memochou1993/thesaurus/database"
 	"go.mongodb.org/mongo-driver/bson"
@@ -130,28 +131,8 @@ func (v *Vocabulary) FindAll(query *mutator.Query) error {
 
 	c := database.Connect(collection)
 
-	filter := bson.M{
-		"$or": []bson.M{
-			bson.M{
-				"descriptiveNote.descriptiveNotes.noteText": bson.M{
-					"$regex": ".*" + query.Term + ".*",
-				},
-			},
-			bson.M{
-				"term.preferredTerms.termText": bson.M{
-					"$regex": ".*" + query.Term + ".*",
-				},
-			},
-			bson.M{
-				"term.nonPreferredTerms.termText": bson.M{
-					"$regex": ".*" + query.Term + ".*",
-				},
-			},
-		},
-	}
-
 	opts := options.Find().SetSkip((query.Page - 1) * query.PageSize).SetLimit(query.PageSize)
-	cur, err := c.Find(ctx, filter, opts)
+	cur, err := c.Find(ctx, filter.Get(query), opts)
 
 	if err != nil {
 		return err

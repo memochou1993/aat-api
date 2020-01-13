@@ -1,15 +1,17 @@
 package mutator
 
 import (
-	"github.com/memochou1993/thesaurus/app/validator"
 	"strconv"
+
+	"github.com/memochou1993/thesaurus/app/validator"
 )
 
 // Query struct
 type Query struct {
-	Term     string
-	Page     int64
-	PageSize int64
+	SubjectID string
+	Term      string
+	Page      int64
+	PageSize  int64
 }
 
 func mutatePage(v string) (int64, error) {
@@ -37,6 +39,7 @@ func (q *Query) Mutate(query *validator.Query) error {
 	page, err := mutatePage(query.Page)
 	pageSize, err := mutatePageSize(query.PageSize)
 
+	q.SubjectID = query.SubjectID
 	q.Term = query.Term
 	q.Page = page
 	q.PageSize = pageSize
