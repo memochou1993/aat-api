@@ -5,7 +5,7 @@ type Payload struct {
 	Data interface{} `json:"data"`
 }
 
-// Get gets the formatter.
-func (p *Payload) Get(data interface{}) {
+// Set sets the formatter.
+func (p *Payload) Set(data interface{}) {
 	p.Data = data
 }

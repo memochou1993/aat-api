@@ -9,6 +9,7 @@ import (
 func NewRouter() *mux.Router {
 	r := mux.NewRouter()
 	r.HandleFunc("/subjects", controller.GetSubjects)
+	r.HandleFunc("/subjects/{id}", controller.GetSubject)
 	r.HandleFunc("/subjects/import", controller.ImportSubjects)
 
 	return r

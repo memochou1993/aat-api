@@ -136,8 +136,6 @@ func (s *Subjects) FindAll(query *mutator.Query) error {
 		return err
 	}
 
-	subjects := []Subject{}
-
 	for cur.Next(ctx) {
 		subject := Subject{}
 
@@ -145,16 +143,26 @@ func (s *Subjects) FindAll(query *mutator.Query) error {
 			return err
 		}
 
-		subjects = append(subjects, subject)
+		s.Subjects = append(s.Subjects, subject)
 	}
 
 	if err := cur.Err(); err != nil {
 		return err
 	}
 
-	s.Subjects = subjects
-
 	return cur.Close(ctx)
+}
+
+// Find finds a subject.
+func (s *Subject) Find(query bson.M) error {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	c := database.Connect(collection)
+
+	err := c.FindOne(ctx, query).Decode(&s)
+
+	return err
 }
 
 // BulkUpsert bulk updates or inserts subjects.
