@@ -8,9 +8,9 @@ import (
 // NewRouter handles the routes.
 func NewRouter() *mux.Router {
 	r := mux.NewRouter()
-	r.HandleFunc("/subjects", controller.GetSubjects)
-	r.HandleFunc("/subjects/{id}", controller.GetSubject)
-	r.HandleFunc("/subjects/import", controller.ImportSubjects)
+	r.HandleFunc("/subjects", controller.GetSubjects).Methods("GET")
+	r.HandleFunc("/subjects/{id}", controller.GetSubject).Methods("GET")
+	r.HandleFunc("/subjects/import", controller.ImportSubjects).Methods("PUT")
 
 	return r
 }
