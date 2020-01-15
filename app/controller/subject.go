@@ -38,7 +38,7 @@ func GetSubjects(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	formatter.Set(&model)
+	formatter.Set(&model.Subjects)
 
 	response(w, http.StatusOK, formatter)
 }
