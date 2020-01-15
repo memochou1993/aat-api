@@ -7,9 +7,16 @@ import (
 
 // Get gets the filter.
 func Get(query *mutator.Query) bson.M {
-	if query.SubjectID != "" {
+	if query.ParentSubjectID != "" {
 		return bson.M{
-			"subjectId": query.SubjectID,
+			"$or": []bson.M{
+				bson.M{
+					"parentRelationship.preferredParents.parentSubjectId": query.ParentSubjectID,
+				},
+				bson.M{
+					"parentRelationship.nonPreferredParents.parentSubjectId": query.ParentSubjectID,
+				},
+			},
 		}
 	}
 

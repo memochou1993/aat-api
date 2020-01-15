@@ -8,10 +8,10 @@ import (
 
 // Query struct
 type Query struct {
-	SubjectID string
-	Term      string
-	Page      int64
-	PageSize  int64
+	ParentSubjectID string
+	Term            string
+	Page            int64
+	PageSize        int64
 }
 
 func mutatePage(v string) (int64, error) {
@@ -39,7 +39,7 @@ func (q *Query) Mutate(query *validator.Query) error {
 	page, err := mutatePage(query.Page)
 	pageSize, err := mutatePageSize(query.PageSize)
 
-	q.SubjectID = query.SubjectID
+	q.ParentSubjectID = query.ParentSubjectID
 	q.Term = query.Term
 	q.Page = page
 	q.PageSize = pageSize
