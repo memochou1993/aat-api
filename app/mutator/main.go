@@ -10,6 +10,7 @@ import (
 type Query struct {
 	ParentSubjectID string
 	Term            string
+	NoteText        string
 	Page            int64
 	PageSize        int64
 }
@@ -41,6 +42,7 @@ func (q *Query) Mutate(query *validator.Query) error {
 
 	q.ParentSubjectID = query.ParentSubjectID
 	q.Term = query.Term
+	q.NoteText = query.NoteText
 	q.Page = page
 	q.PageSize = pageSize
 

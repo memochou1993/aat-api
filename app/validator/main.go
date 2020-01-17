@@ -14,6 +14,7 @@ var (
 type Query struct {
 	ParentSubjectID string `validate:""`
 	Term            string `validate:""`
+	NoteText        string `validate:""`
 	Page            string `validate:"numeric"`
 	PageSize        string `validate:"numeric"`
 }
@@ -22,7 +23,7 @@ func init() {
 	validate = validator.New()
 }
 
-func mutateQuery(r *http.Request, key string, defaultValue string) string {
+func get(r *http.Request, key string, defaultValue string) string {
 	query := r.URL.Query().Get(key)
 
 	if query == "" {
@@ -34,10 +35,11 @@ func mutateQuery(r *http.Request, key string, defaultValue string) string {
 
 // Validate validates the query.
 func (q *Query) Validate(r *http.Request) error {
-	q.ParentSubjectID = mutateQuery(r, "parentSubjectId", "")
-	q.Term = mutateQuery(r, "term", "")
-	q.Page = mutateQuery(r, "page", "1")
-	q.PageSize = mutateQuery(r, "pageSize", "10")
+	q.ParentSubjectID = get(r, "parentSubjectId", "")
+	q.Term = get(r, "term", "")
+	q.NoteText = get(r, "noteText", "")
+	q.Page = get(r, "page", "1")
+	q.PageSize = get(r, "pageSize", "10")
 
 	return validate.Struct(q)
 }
