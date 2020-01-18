@@ -5,8 +5,13 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 )
 
-// Get gets the filters.
-func Get(query *mutator.Query) bson.M {
+// Subject struct
+type Subject struct {
+	Fliter bson.M
+}
+
+// Set sets the filter.
+func (s *Subject) Set(query *mutator.Query) {
 	filters := []bson.M{}
 
 	if query.ParentSubjectID != "" {
@@ -41,7 +46,7 @@ func Get(query *mutator.Query) bson.M {
 		})
 	}
 
-	return bson.M{
+	s.Fliter = bson.M{
 		"$or": filters,
 	}
 }

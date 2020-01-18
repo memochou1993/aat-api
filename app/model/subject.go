@@ -129,8 +129,11 @@ func (s *Subjects) FindAll(query *mutator.Query) error {
 
 	c := database.Connect(collection)
 
+	filter := filter.Subject{}
+	filter.Set(query)
+
 	opts := options.Find().SetSkip((query.Page - 1) * query.PageSize).SetLimit(query.PageSize)
-	cur, err := c.Find(ctx, filter.Get(query), opts)
+	cur, err := c.Find(ctx, filter.Fliter, opts)
 
 	if err != nil {
 		return err
