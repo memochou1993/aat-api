@@ -40,6 +40,10 @@ func GetSubjects(w http.ResponseWriter, r *http.Request) {
 
 	formatter.Set(&model.Subjects)
 
+	if len(model.Subjects) == 0 {
+		formatter.Set([]string{})
+	}
+
 	response(w, http.StatusOK, formatter)
 }
 
