@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  app:
+    container_name: thesaurus
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    depends_on: 
+      - mongo
+    networks:
+      - backend
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    networks:
+      - backend
+
+networks:
+  backend:
