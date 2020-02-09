@@ -1,7 +1,7 @@
 .git
 .gitignore
 Dockerfile
-docker-compose
+docker-compose.yaml
 storage/.gitignore
 storage/example.xml
 .env.example
