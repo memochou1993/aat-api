@@ -168,6 +168,22 @@ func (s *Subject) Find(query bson.M) error {
 	return err
 }
 
+// Upsert updates or inserts subjects.
+func (s *Subject) Upsert() error {
+	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Minute)
+	defer cancel()
+
+	c := database.Connect(collection)
+
+	query := bson.M{"subjectId": s.SubjectID}
+	update := bson.M{"$set": s}
+
+	opts := options.Update().SetUpsert(true)
+	_, err := c.UpdateOne(ctx, query, update, opts)
+
+	return err
+}
+
 // BulkUpsert bulk updates or inserts subjects.
 func (s *Subjects) BulkUpsert() error {
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Minute)

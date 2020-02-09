@@ -1,6 +1,8 @@
 package controller
 
 import (
+	"encoding/xml"
+	"io"
 	"net/http"
 	"os"
 
@@ -9,7 +11,6 @@ import (
 	"github.com/memochou1993/thesaurus/app/formatter"
 	"github.com/memochou1993/thesaurus/app/model"
 	"github.com/memochou1993/thesaurus/app/mutator"
-	"github.com/memochou1993/thesaurus/app/parser"
 	"github.com/memochou1993/thesaurus/app/validator"
 	"go.mongodb.org/mongo-driver/bson"
 )
@@ -70,15 +71,53 @@ func GetSubject(w http.ResponseWriter, r *http.Request) {
 func ImportSubjects(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
 
-	model := model.Subjects{}
+	resource := os.Getenv("RESOURCE_PATH")
+	file, err := os.Open(resource)
+	defer file.Close()
 
-	file := os.Getenv("RESOURCE_PATH")
-	parser.Parse(file, &model)
-
-	if err := model.BulkUpsert(); err != nil {
+	if err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
 		return
 	}
+
+	decoder := xml.NewDecoder(file)
+
+	for {
+		token, err := decoder.Token()
+
+		if err == io.EOF {
+			break
+		}
+
+		if err != nil {
+			response(w, http.StatusInternalServerError, err.Error())
+			return
+		}
+
+		if token == nil {
+			break
+		}
+
+		switch element := token.(type) {
+		case xml.StartElement:
+			switch element.Name.Local {
+			case "Subject":
+				model := model.Subject{}
+
+				if err = decoder.DecodeElement(&model, &element); err != nil {
+					response(w, http.StatusInternalServerError, err.Error())
+					return
+				}
+
+				if err := model.Upsert(); err != nil {
+					response(w, http.StatusInternalServerError, err.Error())
+					return
+				}
+			}
+		}
+	}
+
+	model := model.Subjects{}
 
 	if err := model.PopulateIndex(); err != nil {
 		response(w, http.StatusInternalServerError, err.Error())
