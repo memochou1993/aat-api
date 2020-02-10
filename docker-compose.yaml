@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    container_name: thesaurus
+    container_name: thesaurus-server
     build:
       context: .
       dockerfile: Dockerfile
