@@ -21,10 +21,10 @@ services:
     networks:
       - backend
     volumes:
-      - ./dbdata:/data/db
+      - mongo:/data/db
 
 networks:
   backend:
 
 volumes:
-  dbdata:
+  mongo:
