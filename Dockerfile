@@ -14,7 +14,6 @@ RUN apk --no-cache add ca-certificates
 
 WORKDIR /root
 
-COPY .env .
 COPY storage/vocabulary.xml storage/vocabulary.xml
 COPY --from=builder /app/main .
 
