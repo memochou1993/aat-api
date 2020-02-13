@@ -8,9 +8,11 @@ import (
 // NewRouter handles the routes.
 func NewRouter() *mux.Router {
 	r := mux.NewRouter()
-	r.HandleFunc("/subjects", controller.GetSubjects).Methods("GET")
-	r.HandleFunc("/subjects/{id}", controller.GetSubject).Methods("GET")
-	r.HandleFunc("/subjects", controller.ImportSubjects).Methods("PUT")
+
+	api := r.PathPrefix("/api").Subrouter()
+	api.HandleFunc("/subjects", controller.GetSubjects).Methods("GET")
+	api.HandleFunc("/subjects/{id}", controller.GetSubject).Methods("GET")
+	api.HandleFunc("/subjects", controller.ImportSubjects).Methods("PUT")
 
 	return r
 }
