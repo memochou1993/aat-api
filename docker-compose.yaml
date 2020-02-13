@@ -20,6 +20,11 @@ services:
     container_name: mongo
     networks:
       - backend
+    volumes:
+      - ./dbdata:/data/db
 
 networks:
   backend:
+
+volumes:
+  dbdata:
