@@ -12,12 +12,14 @@ services:
       - database
     ports:
       - "8081:8081"
+    restart: always
     networks:
       - backend
 
   database:
     image: mongo:latest
     container_name: mongo
+    restart: always
     networks:
       - backend
     volumes:
