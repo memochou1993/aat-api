@@ -11,7 +11,7 @@ services:
     depends_on:
       - database
     ports:
-      - "8081:8081"
+      - "81:81"
     restart: always
     networks:
       - backend
