@@ -12,13 +12,23 @@ type Subject struct {
 
 // Set sets the filter.
 func (s *Subject) Set(query *mutator.Query) {
-	if query.Term == "" {
-		s.Fliter = bson.M{}
+	filters := []bson.M{}
+
+	if query.ParentSubjectID != "" {
+		filters = append(filters, bson.M{
+			"parentRelationship.preferredParents.parentSubjectId": query.ParentSubjectID,
+		})
+
+		filters = append(filters, bson.M{
+			"parentRelationship.nonPreferredParents.parentSubjectId": query.ParentSubjectID,
+		})
+
+		s.Fliter = bson.M{
+			"$or": filters,
+		}
 
 		return
 	}
-
-	filters := []bson.M{}
 
 	if query.Term != "" {
 		filters = append(filters, bson.M{
@@ -46,17 +56,5 @@ func (s *Subject) Set(query *mutator.Query) {
 		return
 	}
 
-	if query.ParentSubjectID != "" {
-		filters = append(filters, bson.M{
-			"parentRelationship.preferredParents.parentSubjectId": query.ParentSubjectID,
-		})
-
-		filters = append(filters, bson.M{
-			"parentRelationship.nonPreferredParents.parentSubjectId": query.ParentSubjectID,
-		})
-	}
-
-	s.Fliter = bson.M{
-		"$or": filters,
-	}
+	s.Fliter = bson.M{}
 }
