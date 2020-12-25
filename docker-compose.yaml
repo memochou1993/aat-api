@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   app:
@@ -8,15 +8,15 @@ services:
     env_file:
       - .env
     depends_on:
-      - database
+      - mongo
     ports:
       - "${APP_PORT}:80"
     networks:
       - backend
 
-  database:
+  mongo:
     image: mongo:latest
-    container_name: mongo
+    container_name: thesaurus-mongo
     restart: always
     networks:
       - backend
