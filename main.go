@@ -9,5 +9,5 @@ import (
 func main() {
 	r := router.NewRouter()
 
-	http.ListenAndServe(":81", r)
+	http.ListenAndServe(":80", r)
 }
