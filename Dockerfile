@@ -14,7 +14,7 @@ RUN apk --no-cache add ca-certificates
 
 WORKDIR /root
 
-COPY storage/vocabulary.xml storage/vocabulary.xml
+COPY ${RESOURCE_PATH} ${RESOURCE_PATH}
 COPY --from=builder /app/main .
 
 ENTRYPOINT ./main
